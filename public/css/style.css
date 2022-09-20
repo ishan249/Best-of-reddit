@@ -1,0 +1,359 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(-45deg, #f47836, #158ae0, #fc4538, #f4ae2b);
+  background-size: 500% 500%;
+  animation: gradient 10s ease infinite;
+  /* height: 100vh; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heading1 {
+  text-align: center;
+  font-size: 85px;
+  font-family: 'Ms Madi', cursive;
+  color: white;
+  margin-top: 25px;
+  display: block;
+  height: 50px;
+}
+
+#myBtn {
+  align: right;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  /* background: transparent; */
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: 'ALbert Sans';
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#myBtn:hover{
+  background-color: grey;
+}
+
+.subredditMenu {
+  font-family: 'Albert Sans';
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.headName {
+  /* font-size: 110px; */
+  text-align: center;
+  /* top: 0; */
+  /* position: relative; */
+}
+
+.headingDescription {
+  font-family: 'Albert Sans';
+  color: white;
+  margin-top: 30px;
+  /* margin-left: 5px; */
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Mali', cursive;
+  /* cursor: url('/images/mouse-clicker.png'),auto; */
+}
+
+.startButton {
+  align-items: center;
+  align-content: center;
+}
+
+.newBtn {
+  text-align: center;
+  align-items: center;
+  color: black;
+  background: transparent;
+  border-radius: 28px;
+  margin: 40px;
+  height: 50px;
+  width: 180px;
+  font-size: 18px;
+  font-family: 'Albert Sans';
+  font-weight: bold;
+  position: relative;
+  /* transition-duration: 0.5s; */
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+}
+
+.newBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
+  }
+
+  40% {
+    top: 0em;
+  }
+
+  43% {
+    top: -0.9em;
+  }
+
+  46% {
+    top: 0em;
+  }
+
+  48% {
+    top: -0.4em;
+  }
+
+  50% {
+    top: 0em;
+  }
+
+  100% {
+    top: 0em;
+  }
+}
+
+.firstSection {
+  /* border: 2px black solid; */
+  /* margin: 40px; */
+}
+
+#secondPart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 600px; */
+  padding: 30px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  font-family: 'Albert Sans';
+  color: black;
+  border-radius: 10px;
+}
+
+#secondPart.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.firstSection#blur.active {
+  filter: blur(8px);
+}
+
+.categoryButtonDiv {
+  margin: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+.categoryBtns {
+  border-radius: 22px;
+  margin: 6px;
+  background-color: #0A66C2;
+  border: 1px black solid;
+  height: 40px;
+  color: white;
+  padding: 6px;
+}
+
+.categoryBtns:hover {
+  background-color: #16437E;
+}
+
+.mainBtns {
+  font-family: 'Albert Sans';
+  /* background: transparent; */
+  border: none;
+  border-style: solid;
+  font-weight: bold;
+  /* font-size: 24px; */
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  line-height: 23px;
+  outline: none;
+  border-radius: 24px;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  background: transparent;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.mainBtns:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(186, 186, 186, 1) 46%);
+}
+
+.mainBtns:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.mainBtnPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.firstScroll {
+  display: none;
+  visibility: hidden;
+}
+
+.secondScroll {
+  display: none;
+  visibility: hidden;
+}
+
+.thirdScroll {
+  display: none;
+  visibility: hidden;
+}
+
+.cardBody {
+  background-color: white;
+  color: black;
+  font-family: 'Albert Sans';
+  border-radius: 12px;
+  /* border:2px black solid; */
+  margin: 46px;
+  width: 500px;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  /* height: 220px; */
+}
+
+.heading {
+  font-size: 16px;
+  color: black;
+  margin-top: 10px;
+  margin-left: 16px;
+  /* border:2px black solid; */
+  /* height: 200px; */
+  font-weight: bold;
+  font-family: 'Albert Sans';
+  /* padding: 10px; */
+}
+
+.main-body {
+  display: flex;
+}
+
+.card-body:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.upvotes-section {
+  width: 30px;
+  margin-top: 10px;
+  /* border: 1px black solid; */
+}
+
+.contentCard {
+  /* border:2px black solid; */
+  border-radius: 6px;
+}
+
+.content {
+  /* border: 1px black solid; */
+  padding-left: 12px;
+}
+
+.vote-img {
+  height: 20px;
+  width: 20px;
+  margin-left: 4px;
+}
+
+.comments-link {
+  display: flex;
+  height: 26px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.comments {
+  width: 120px;
+  /* margin-left: 18px; */
+}
+
+.link-button {
+  margin-left: 4px;
+  /* padding: 5px; */
+  /* width:160px; */
+}
+
+.link {
+  color: #FF0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #FF0000;
+}
+
+a {
+  transition-duration: 0.5s;
+}
+
+.link-img {
+  height: 20px;
+  width: 20px;
+  margin-left: 2px;
+}
+
+.footer{
+  text-align: center;;
+  color: white;
+  font-family: 'Albert Sans';
+  margin-top: 5px;
+}
