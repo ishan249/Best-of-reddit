@@ -297,7 +297,6 @@ body {
 }
 
 .content {
-
   padding-left: 12px;
 }
 
@@ -315,8 +314,7 @@ body {
 }
 
 .comments {
-  width: 140px;
-
+  width: 120px;
 }
 
 .link-button {
