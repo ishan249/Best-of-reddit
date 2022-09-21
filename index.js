@@ -45,7 +45,6 @@ app.post("/showContent", function(req, res) {
       });
 
       // Loop extracting links to the post
-
       $('.SQnoC3ObvgnGjWt90zD9Z').each(function() {
         var post = $(this).attr('href');
         var link = `https://www.reddit.com${post}`;
@@ -59,10 +58,7 @@ app.post("/showContent", function(req, res) {
         upvotes.push(post1);
       });
 
-
       // Loop extracting comments
-
-
       $('.FHCV02u6Cp2zYL0fhQPsO').each(function() {
         var post1 = $(this)[0].children[0].data;
         comments.push(post1);
