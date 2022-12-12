@@ -26,7 +26,7 @@ app.listen(4008, function() {
 app.post("/showContent",function(req, res) {
   let subredditName = req.body.initialInput;
   console.log(subredditName);
-  request(`https://www.reddit.com/${subredditName}/hot/`, {timeout: 10000},function(err, resp, body) {
+  request(`https://www.reddit.com/${subredditName}/hot/`, {timeout: 20000},function(err, resp, body) {
 
     console.log(resp.statusCode);
     if (!err && resp.statusCode === 200) {
