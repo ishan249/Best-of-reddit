@@ -2,9 +2,9 @@
   "name": "reddit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
