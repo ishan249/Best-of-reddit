@@ -5,7 +5,22 @@
 html {
   scroll-behavior: smooth;
 }
+.headerText{
+  font-family: 'Albert Sans';
+  font-weight: bold;
+  font-size: 16px;
+padding-top: 8px;
+}
+.headerLink{
+  text-decoration: none;
+  color:white;
+  padding: 8px 40px;
 
+}
+.headerLink:hover{
+  text-decoration: none;
+  color:rgb(223, 223, 223);
+}
 body {
   background: linear-gradient(-45deg, #f47836, #158ae0, #fc4538, #f4ae2b);
   background-size: 500% 500%;
