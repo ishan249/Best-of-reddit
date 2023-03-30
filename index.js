@@ -66,35 +66,7 @@ app.post("/showContent",function(req, res) {
         comments.push(post1);
       });
 
-      // Printing all the values in Array
-      console.log("\nPrinting Heading\n\n");
-
-
-      for (var i = 0; i < headings.length; i++) {
-        console.log(headings[i]);
-      }
-
-
-      console.log("\nPrinting links\n\n");
-
-      for (var i = 0; i < links.length; i++) {
-        console.log(links[i]);
-      }
-
-
-      console.log("\nPrinting number of upvotes\n\n");
-
-      for (var i = 0; i < upvotes.length; i++) {
-        console.log(upvotes[i]);
-      }
-
-      console.log("\nPrinting number of comments\n\n");
-
-      for (var i = 0; i < comments.length; i++) {
-        console.log(comments[i]);
-      }
-
-
+      
       // rendering array values to showContent.ejs file
 
       res.render('showContent', {
